@@ -1088,3 +1088,80 @@ metrics file
 400. prometheus --config.file=prometheus.yml
 --web.console.templates=console/ – Load custom web 
 templates
+
+## GRAFANA COMMANDS
+
+401. grafana-server --version – Check Grafana version
+
+402. systemctl start grafana-server – Start Grafana
+service
+
+403. systemctl stop grafana-server – Stop Grafana
+service
+
+404. systemctl restart grafana-server – Restart
+Grafana
+
+405. systemctl status grafana-server – Check Grafana
+status
+
+406. grafana-cli plugins list – List installed plugins
+
+407. grafana-cli plugins install grafana-clock-panel –
+Install a Grafana plugin
+
+408. grafana-cli plugins update-all – Update all
+plugins
+
+409. grafana-cli admin reset-admin-password
+newpassword – Reset admin password
+
+410. curl http://localhost:3000/api/health – Check
+Grafana health
+
+411. curl -u admin:admin 
+http://localhost:3000/api/dashboards/home –
+Get home dashboard
+
+412. grafana-cli plugins remove plugin-name – Remove a
+plugin
+
+413. grafana-cli admin reset-admin-password newpass –
+Reset admin password
+
+414. grafana-server -config /etc/grafana/grafana.ini –
+Start with custom config
+
+415. curl -X GET http://localhost:3000/api/dashboards
+– List dashboards
+
+416. curl -X POST
+http://localhost:3000/api/dashboards/db -d 
+'@dashboard.json' – Create dashboard
+
+417. journalctl -u grafana-server --no-pager – Check
+logs
+
+418. grafana-cli plugins install
+grafana-simple-json-datasource – Install JSON data 
+source
+
+419. grafana-cli plugins update – Update Grafana
+plugins
+
+420. systemctl enable grafana-server – Enable Grafana
+on startup
+
+421. grafana-cli plugins update-all – Update all
+plugins
+
+422. grafana-cli server restart – Restart Grafana
+
+423. grafana-cli admin reset-admin-password
+mynewpassword – Reset password
+
+424. curl http://localhost:3000/api/org – Get
+organization details
+
+425. grafana-server --homepath /var/lib/grafana – Run
+Grafana with a specific path
