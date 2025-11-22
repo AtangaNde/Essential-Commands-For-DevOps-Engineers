@@ -1165,3 +1165,65 @@ organization details
 
 425. grafana-server --homepath /var/lib/grafana – Run
 Grafana with a specific path
+
+## ARGOCD COMMANDS
+
+427. argocd login my-argocd.com – Login to ArgoCD
+
+428. argocd app list – List all ArgoCD applications
+
+426. argocd version – Show ArgoCD CLI version
+
+429. argocd app get my-app – Show details of an app
+
+430. argocd app sync my-app – Sync an application
+
+431. argocd app delete my-app – Delete an application
+
+432. argocd app rollback my-app 1 – Rollback an
+application
+
+433. argocd app history my-app – Show deployment
+history
+
+434. argocd app create my-app --repo
+https://github.com/user/repo.git --path app – 
+Create an application
+
+435. argocd app update my-app --sync-policy automated
+– Enable auto-sync
+
+436. argocd app set my-app --dest-server 
+https://k8s-cluster – Set destination server
+
+437. argocd app unset my-app --dest-server – Unset
+destination server
+
+438. argocd repo list – List connected repositories
+
+439. argocd repo add https://github.com/user/repo.git
+– Add a repository
+
+440. argocd cluster list – List managed clusters
+
+441. argocd cluster add my-cluster – Add a new cluster
+
+442. argocd login my-argocd.com --username admin
+--password pass – Login with credentials
+
+443. argocd app diff my-app – Show differences in
+application
+
+444. argocd proj list – List ArgoCD projects
+
+445. argocd proj create my-project – Create a project
+
+446. argocd proj delete my-project – Delete a project
+
+447. argocd settings list – Show ArgoCD settings
+
+448. argocd account list – List user accounts
+
+449. argocd logout – Logout from ArgoCD
+
+450. argocd help – Show help for ArgoCD CLI
