@@ -1297,3 +1297,80 @@ build
 
 475. circleci admin namespace list – List CircleCI
 namespaces
+
+## Security & Compliance (Trivy, Vault, Falco)
+#### Trivy (Container Security Scanning)
+
+476. trivy image nginx:latest – Scan a container image
+
+477. trivy filesystem /path/to/dir – Scan a directory
+
+478. trivy repo https://github.com/user/repo – Scan a
+Git repository
+
+479. trivy k8s cluster – Scan a Kubernetes cluster
+
+480. trivy config . – Scan IaC configurations
+
+#### Vault (Secrets Management)
+
+481. vault server -dev – Start Vault in development
+mode
+
+482. vault kv put secret/mysecret key=value – Store a
+secret
+
+483. vault kv get secret/mysecret – Retrieve a secret
+
+484. vault kv delete secret/mysecret – Delete a secret
+
+485. vault login <token> – Authenticate with Vault
+
+## Monitoring & Logging (Loki, ELK, Fluentd)
+#### Loki (Log Aggregation)
+
+486. loki -config.file=loki-config.yml – Start Loki
+with config file
+
+487. curl -X GET
+http://localhost:3100/loki/api/v1/labels – Get 
+available labels
+
+488. curl -X GET 
+'http://localhost:3100/loki/api/v1/query?query={app
+="nginx"}' – Query logs
+ELK Stack (Elasticsearch, Logstash, Kibana)
+
+489. curl -X GET "localhost:9200/_cat/indices?v" –
+List Elasticsearch indices
+
+490. curl -X POST "localhost:9200/logs/_doc/" -H 
+"Content-Type: application/json" -d
+'{"message": "hello world"}' – Insert a log 
+entry
+
+491. curl -X GET "localhost:9200/logs/_search" –
+Search logs
+
+492. systemctl start logstash – Start Logstash
+
+493. systemctl restart kibana – Restart Kibana
+Fluentd (Log Forwarding)
+
+494. fluentd --config fluentd.conf – Start Fluentd
+with a specific config
+
+495. fluentd --dry-run --config fluentd.conf –
+Validate Fluentd config
+
+### Final Set of Essential Commands
+
+496. htop – Interactive process monitoring
+
+497. iftop – Monitor network bandwidth usage
+
+498. iotop – Monitor disk I/O usage
+
+499. nc -zv host 80 – Check if a port is open
+
+500. curl -I http://example.com – Fetch HTTP headers
