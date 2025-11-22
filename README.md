@@ -1227,3 +1227,73 @@ application
 449. argocd logout – Logout from ArgoCD
 
 450. argocd help – Show help for ArgoCD CLI
+
+## GITHUB ACTION COMMANDS
+
+451. gh workflow list – List all GitHub Actions
+workflows
+
+452. gh workflow run my-workflow.yml – Run a specific
+workflow
+
+453. gh run list – List all workflow runs
+
+454. gh run view <run_id> – View details of a workflow
+run
+
+455. gh run cancel <run_id> – Cancel a running
+workflow
+
+456. gh run rerun <run_id> – Rerun a failed workflow
+
+457. gh secret list – List GitHub repository secrets
+
+458. gh secret set MY_SECRET --body "value" – Set a
+secret in GitHub Actions
+
+459. gh variable list – List environment variables in
+GitHub Actions
+
+460. gh variable set MY_VAR --body "value" – Set an
+environment variable
+GitLab CI/CD
+
+461. gitlab-runner register – Register a new GitLab
+runner
+
+462. gitlab-runner start – Start GitLab Runner
+
+463. gitlab-runner stop – Stop GitLab Runner
+
+464. gitlab-runner verify – Verify if runners are
+properly registered
+
+465. gitlab-runner list –List all registered runners
+
+466. gitlab-runner status– Show GitLab Runner status
+
+467. gitlab-runner logs –View logs for GitLab Runner
+CircleCI
+
+468. circleci config validate – Validate CircleCI
+Configuration
+
+469. circleci local execute -c .circleci/config.yml –
+Run pipeline locally
+
+470. circleci project list – List all projects in
+CircleCI
+
+471. circleci setup – Configure CircleCI for the first
+time
+
+472. circleci build – Run a build locally
+
+473. circleci config process .circleci/config.yml –
+Process CircleCI config
+
+474. circleci rerun <build_number> – Rerun a specific
+build
+
+475. circleci admin namespace list – List CircleCI
+namespaces
